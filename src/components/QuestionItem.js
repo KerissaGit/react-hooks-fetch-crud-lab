@@ -17,7 +17,7 @@ function QuestionItem({ question }) {
         Correct Answer:
         <select defaultValue={correctIndex}>{options}</select>
       </label>
-      <button>Delete Question</button>
+      <button onClick={() => deleteQuestion(IDBDatabase)}>Delete Question</button>
     </li>
   );
 }
